@@ -4,14 +4,7 @@ const resultD = document.getElementById('result');
 const possibleC = document.querySelectorAll('button');
 let userC;
 let computerC;
-/*
-possibleC.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-     userC = e.target.id
- userCD.innerHTML = userC
- generateCC()
- getResult()
-}))
-*/
+
 function getuserCscissors(){
      userC = "scissors";
      userCD.src = 'img/scissors-icon.png';
@@ -33,7 +26,7 @@ function getuserCrock(){
 
 
 function generateCC(){
-     const randomNumber = Math.floor(Math.random() * 3 + 1) // or you can use possibleC.length
+     const randomNumber = Math.floor(Math.random() * 3 + 1) 
      if (randomNumber === 1) {
           computerCC = 'img/spock-icon.png';
           computerC = "rock";
